@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv Pedde_Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Blockchain-Developer</p>
+                <h1>Hi, I am <span>Atharv Pedde</span><br> from Latur.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Computer Engineering student at JSPM's Rajarshi Shahu College of Engineering (RSCOE), Pune, set to graduate in 2026. I have a strong passion for technology with expertise in blockchain, web development, cybersecurity, and graphic design. My experience extends beyond academics as I actively contribute to various clubs, collaborating with peers and enhancing my skills through real-world projects. I am driven by a desire to learn, innovate, and create impactful solutions, aiming to make meaningful contributions to the tech industry.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Blockchain Development</span><br>Designing Smart Contracts and deployment</li>
+                            <li><span>Web Development</span><br>Designing web applications</li>
+                            <li><span>Graphic Design</span><br>Working on UI/UX and graphic design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Working as a content creator at TEDxJSPMRSCOE</li>
+                            <li><span>2024 - Current</span><br>Working as Blockchain Lead at GDSC@RSCOE</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Pursuing B.Tech in Computer Engineering at JSPM's RSCOE, Pune</li>
+                            <li><span>2022</span><br>Completed 12th</li>
+                            <li><span>2020</span><br>Completed 10th from Podar International School, Latur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Can develop web project for you.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>Can create UI/UX design.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Blockchain Contract</h2>
+                <p>Can create smart contract.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Agri-Smart Contract</h3>
+                    <p>This website helps u to make smart contract in agriculture.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>E-commerce website</h3>
+                    <p>This website helps u to buy products online.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Portfolio website</h3>
+                    <p>This website helps u to make ur resume.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>atharvpedde@gmail.com</p>
+          <p>8806434421</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/atharv_pedde22?igsh=Z3ZxaDcxNDVyNGc2"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/atharv-pedde-5610a8257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="images/Atharv Pedde- Resume1.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right"></div>
+        <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type=""submit class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>

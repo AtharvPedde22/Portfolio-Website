@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+    <project>
+        <title>Agri-Smart Contract</title>
+        <description>This website helps you to make smart contracts for agriculture.</description>
+        <link>#</link>
+    </project>
+    <project>
+        <title>E-commerce Website</title>
+        <description>This website helps you to buy products online.</description>
+        <link>#</link>
+    </project>
+    <project>
+        <title>Portfolio Website</title>
+        <description>This website helps you to create your resume.</description>
+        <link>#</link>
+    </project>
+</portfolio>
