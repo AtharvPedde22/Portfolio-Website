@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv Pedde_Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/93752690c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="navbar">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#certificate">Certification</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+<!-- Header Section (with text and background image) -->
+<div id="header">
+    <div class="container">
+        <div class="header-text">
+            <p>Full-Stack Developer</p>
+            <h1>Hi, I am <span>Atharv Pedde</span><br> from Pune.</h1>
+        </div>
+    </div>
+</div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am Atharv Pedde, a Computer Science student at JSPM’s Rajarshi Shahu College of Engineering (RSCOE), graduating in 2026, passionate about coding, Full-Stack development, DevOps, Blockchain and graphic design. I enjoy transforming ideas into impactful solutions through innovative projects, ranging from cloud-based systems and secure authentication models to game development and defense research. As an active contributor to communities like GDSC RSCOE, I thrive on collaboration, creativity, and continuous learning. My vision is to leverage technology not only to achieve success but also to help others and create meaningful impact.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Java Full Stack Development</span><br>
+                                Working with REST APIs, JSP, and MySQL
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>
+                                Building full-stack applications using React, Node.js, and MySQL
+                            </li>
+                            <li>
+                                <span>Cloud & DevOps</span><br>
+                                Deploying on AWS (EC2, S3) with Docker and GitHub
+                            </li>
+                            <li>
+                                <span>Blockchain Development</span><br>
+                                Designing Smart Contracts and deployment
+                            </li>
+                            <li>
+                                <span>Graphic Design</span><br>
+                                Working on UI/UX and graphic design using Figma and Canva
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>07/2024 - 08/2025</span><br>Working as Blockchain Lead at GDGC, RSCOE</li>
+                            <li><span>2023 - Current</span><br>Working as Training & Placement Co-Ordinator at SP&IR Cell</li>
+                            <li><span>06/2023 - 07/2025</span><br>Working as a Content Creator at TEDxJSPMRSCOE</li>
+                            <li><span>06/2023 - 06/2024</span><br>Worked as Joint Editor at Rotaract Club of RSCOE</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current(2026)</span><br>Pursuing B.Tech in Computer Engineering at JSPM's RSCOE, Pune</li>
+                            <li><span>2021-2022</span><br>Completed 12th from Swami Vivekanand Integration English School, Latur</li>
+                            <li><span>2019-2020</span><br>Completed 10th from Podar International School, Latur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    
+                        <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Can develop web project for you.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Can create UI/UX design.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Can create graphic designs for you.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>AGRI-CHAIN</h3>
+                        <p>Supply Chain Optimization Using Blockchain and AI” enhances transparency, efficiency, and 
+                            decision-making by combining secure, tamper-proof tracking with AI-driven demand forecasting 
+                            and inventory management.</p>
+                        <a href="https://github.com/AtharvPedde22/EDI-A7.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>CarGoNow</h3>
+                        <p>The Car Rental System is a Java-based console application designed to provide a seamless car rental experience while
+                             reinforcing object-oriented programming (OOP) concepts. This project serves as a functional simulation of 
+                             a real-world car rental service, enabling users to rent and return cars, manage customer records, and maintain rental histories</p>
+                        <a href="https://github.com/AtharvPedde22/CarGoNow.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Shell-Cart website</h3>
+                        <p>The Shell-Cart E-commerce Website is a full-stack MERN (MongoDB, Express, React, Node.js) 
+                            web application designed to provide a seamless online shopping experience. 
+                            It features a responsive and user-friendly interface</p>
+                        <a href="https://github.com/AtharvPedde22/Shell-Cart_E-commerce_website.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<div id="certificate"> 
+    <div class="container">
+        <h1 class="sub-title">Certification</h1>
+        <div class="certi-list">
+            <div class="certi">
+                <img src="images/certi-1.png" alt="Certificate 1">
+                <div class="layer">
+                    <h3>EduSkills/AICTE Java Full Stack Virtual Internship (Apr–Jun 2025)</h3>
+                    <p>Completed a 10‑week virtual internship as a Java Full Stack Developer through EduSkills Academy under AICTE’s National Internship Portal, 
+                        demonstrating end‑to‑end exposure to full‑stack concepts and project-oriented learning.</p>
+                    <a href="https://drive.google.com/file/d/1YsXZ483bv0i9sCqcXiPViqDB0xxk2W8P/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="certi">
+                <img src="images/certi-2.png" alt="Certificate 2">
+                <div class="layer">
+                    <h3>EduSkills Academy: Java Full Stack Course Completion</h3>
+                    <p>Achieved course completion in Java Full Stack from EduSkills Academy (dated June 21, 2025), reflecting structured training across backend, frontend, and deployment fundamentals.</p>
+                    <a href="https://drive.google.com/file/d/1LCWSMV23Ux-H34wJKTuJDGY4qrruvEkq/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="certi">
+                <img src="images/certi-3.png" alt="Certificate 3">
+                <div class="layer">
+                    <h3>NPTEL IIT Kharagpur: Programming in Java (Jan–Apr 2024)</h3>
+                    <p>Completed a 12‑week NPTEL course “Programming in Java” coordinated by IIT Kharagpur, with consolidated 
+                        score details reflecting assignment and proctored exam performance.</p>
+                    <a href="https://drive.google.com/file/d/1JhRn2lYdSLNwWzLE10SYKRZqkbvXOe48/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="certi">
+                <img src="images/certi-4.png" alt="Certificate 4">
+                <div class="layer">
+                    <h3>Zscaler Academy: Fundamentals of Cybersecurity (EDU‑102)</h3>
+                    <p>Earned a completion certificate from Zscaler Training covering cybersecurity foundations, including core principles, threat awareness, and best practices; 
+                        certificate validity shown as Oct 30, 2024 to Oct 30, 2026.</p>
+                    <a href="https://drive.google.com/file/d/1cSS1HNkxw02xAi2TLAmgWszVXm6dVuvw/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Hidden certificate -->
+            <div class="certi hidden">
+                <img src="images/certi-5.png" alt="Certificate 5">
+                <div class="layer">
+                    <h3>HackerRank Skill Certification: SQL (Intermediate)</h3>
+                    <p>Passed HackerRank’s SQL (Intermediate) skill certification on August 15, 2025, 
+                        validating practical competency in intermediate-level SQL querying and problem solving</p>
+                    <a href="https://drive.google.com/file/d/1PqsFZJLNRq9loOHMrq1gE1L-QKOrbCfj/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- See More button -->
+        <a href="javascript:void(0)" class="btn" id="seeMoreBtn">See More</a>
+    </div>
+</div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>atharvpedde@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 88064 34422</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/atharv_pedde22?igsh=Z3ZxaDcxNDVyNGc2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/atharv-pedde-5610a8257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Atharv Pedde_Capgi_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+    document.getElementById("seeMoreBtn").addEventListener("click", function() {
+    const hiddenItems = document.querySelectorAll(".certi.hidden");
+
+    hiddenItems.forEach(item => {
+        item.classList.toggle("hidden");
+    });
+
+    // Change button text
+    if (this.textContent === "See More") {
+        this.textContent = "See Less";
+    } else {
+        this.textContent = "See More";
+    }
+    });
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbydVpR3zUu5tKZXdMLh0b5GjhIfuapizkEul3hEf51j51Mb8g31--pm6b7GPLCUYTw59A/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){
+            msg.innerHTML = "";
+        },3000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
